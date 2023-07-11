@@ -46,7 +46,7 @@
 	if (self) {
 
 		NSBundle *bundle = [[NSBundle alloc]initWithPath:@"/var/jb/Library/PreferenceBundles/NotBrightRespringPreferences.bundle"]; // rootless
-		// NSBundle *bundle = [[NSBundle alloc]initWithPath:@"/Library/PreferenceBundles/RoundDockRemasteredPreferences.bundle"]; //rootful
+		// NSBundle *bundle = [[NSBundle alloc]initWithPath:@"/Library/PreferenceBundles/NotBrightRespringPreferences.bundle"]; //rootful
 		UIImage *logo = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"icon@256" ofType:@"png"]];
 		UIImageView *icon = [[UIImageView alloc]initWithImage:logo];
 		icon.layer.masksToBounds = YES;
