@@ -28,7 +28,7 @@ FOUNDATION_EXPORT void BKSDisplayBrightnessSet(float brightness, NSInteger unkno
 
 %ctor {
     preferences = [[HBPreferences alloc] initWithIdentifier:@"com.thomz.notbrightrespringpreferences"];
-    enable = [preferences objectForKey:@"enable"];
+    enable = [preferences boolForKey:@"enable"];
     brightness = [preferences floatForKey:@"brightness"];
     if(enable){
         %init(Main)
